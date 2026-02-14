@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import HowItWorksPage from "./pages/HowItWorks";
+import About from "./pages/About";
 // import RecipeDetails from './pages/RecipeDetails'; // Uncomment later
 import LoadingScreen from "./components/layout/LoadingScreen";
 import "./index.css";
@@ -35,6 +36,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/how-it-works" element={<HowItWorksPage />} />
+            <Route path="/about" element={<About />} />
             {/* <Route path="/recipe/:id" element={<RecipeDetails />} /> */}
             {/* Add more routes here */}
           </Routes>
